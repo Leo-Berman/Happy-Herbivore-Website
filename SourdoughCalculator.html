@@ -50,17 +50,9 @@
 
         document.getElementById("SourNeeded").innerHTML = sour;
     }
-</script>
-<head>
-    <style>
-        body {
-            background-color: pink;
-        }
-
-        
-    </style>
-</head> 
+</script> 
     <body>
+
         <div class="navbar">
             <div class="dropdown">
               <button class="navbutton">
@@ -76,25 +68,29 @@
           </div>
           <div class = "divcenter" style = "margin-top:100px;">
         <div class = "calcgrid">
-            <h2 style = "margin-top:0;grid-area:describe">Hydration [%]:</h2>
+            <h2 style = "text-align:center;margin-top:0;grid-area:describe">Hydration [%]:</h2>
             <input id = "Hydration" name = "Hydration" style = "grid-area:inputtype;width:100%;max-width:600px;font-size:4vh;border-radius:10px;border-width: 10px;height:5vh;vertical-align:text-middle;display:inline-block; font-family:Arial;" type = "text">
-            <h2 style = "margin-top:0;grid-area:describe1">Number of Servings:</h2>
+            
+            <h2 style = "text-align:center;margin-top:0;grid-area:describe1">Number of Servings:</h2>
             <input id = "Servings" name = "Servings" style = "grid-area:inputtype1;width:100%;max-width:600px;font-size:4vh;border-radius:10px;border-width: 10px;height:5vh;vertical-align:text-middle;display:inline-block; font-family:Arial;" type = "text">
-            <h2 style = "margin-top:0;grid-area:describe2">Amount of Starter [g]:</h2>
+            
+            <h2 style = "text-align:center;margin-top:0;grid-area:describe2">Amount of Starter [g]:</h2>
             <input id = "Starter" name = "Starter" style = "grid-area:inputtype2;width:100%;max-width:600px;font-size:4vh;border-radius:10px;border-width: 10px;height:5vh;vertical-align:text-middle;display:inline-block; font-family:Arial;" type = "text">
-            <button class = "solvebutt" value = "Solve" onclick = "calc()"> <h3 style = "padding:0;margin:0;font-family:Arial;font-size:40pt;font-weight:bold;color:purple;">=</h3> </button>
-    </div>
-        <div class = "divcenter" style = "max-width:400px;width:100vw;margin-top:30vh;line-height:2">
-            <p> Flour [g]: </p>
-            <p id = "FlourNeeded">___</p><br>
-            <p> Water [g]: </p>
-            <p id = "WaterNeeded">___</p><br>
-            <p> Salt [g]: </p>
-            <p id = "SaltNeeded">___</p><br>
-            <p> Starter [g]: </p>
-            <p id = "StarterNeeded">___</p><br>
+            
+            <button class = "solvebutt" style = "margin-left:250px;grid-area:equals" value = "Solve" onclick = "calc()"> <h3 style = "padding:0;margin:0;font-family:Arial;font-size:40pt;font-weight:bold;color:purple;">=</h3> </button>
+        
+        <div class="outcomegrid" style = "grid-area:outcome;">
+            <p style = "grid-area:flour"> Flour [g]: </p>
+            <p style = "grid-area:outf" id = "FlourNeeded">___</p><br>
+            <p style = "grid-area:water"> Water [g]: </p>
+            <p style = "grid-area:outw" id = "WaterNeeded">___</p><br>
+            <p style = "grid-area:salt"> Salt [g]: </p>
+            <p style = "grid-area:outsa" id = "SaltNeeded">___</p><br>
+            <p style = "grid-area:starter"> Starter [g]: </p>
+            <p style = "grid-area:outst" id = "StarterNeeded">___</p><br>
 
         </div>
         </div>
+    </div>
     </body>
 </html> 

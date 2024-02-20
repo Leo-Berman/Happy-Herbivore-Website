@@ -41,13 +41,14 @@ p {
     margin-bottom:-1;
 }
     
+
 h2{
     margin-right: 0px;
     text-align: left;
     font-family: "Arial";
     min-width: 260px;
     margin-top: 0px;
-    font-size:2vh;
+    font-size:3vh;
 }
 
 h3{
@@ -76,11 +77,28 @@ h3{
 
 .calcgrid{
     display:grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows:100px 100px 100px 100px;
+    grid-template-columns: 400px 300px;
+    grid-template-rows:80px 80px 80px 160px;
     grid-template-areas: 
         "describe inputtype"
         "describe1 inputtype1"
         "describe2 inputtype2"
-        "equals equals"
+        "equals outcome"
+}
+
+.outcomegrid{
+    display:grid;
+    grid-template-columns: 140px 30px;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-template-areas:
+    "flour outf"
+    "water outw"
+    "salt outsa"
+    "starter outst"
+}
+
+@media only screen and (max-width: 600px) {
+h2 {
+font-size: 1px;
+}
 }
