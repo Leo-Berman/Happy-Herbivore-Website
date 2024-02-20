@@ -43,14 +43,7 @@ p {
 }
     
 
-h2{
-    margin-right: 0px;
-    text-align: left;
-    font-family: "Arial";
-    min-width: 260px;
-    margin-top: 0px;
-    font-size:3vh;
-}
+
 
 h3{
     font-family: "Arial";
@@ -78,8 +71,8 @@ h3{
 
 .calcgrid{
     display:grid;
-    grid-template-columns: 400px 300px;
-    grid-template-rows:80px 80px 80px 160px;
+    grid-template-columns: 40vw 30vw;
+    grid-template-rows:10vh 10vh 10vh 20vh;
     grid-template-areas: 
         "describe inputtype"
         "describe1 inputtype1"
@@ -89,7 +82,7 @@ h3{
 
 .outcomegrid{
     display:grid;
-    grid-template-columns: 300px 140px 30px;
+    grid-template-columns: 40vw 20vw 10vw;
     grid-template-rows: 40px 40px 40px 40px;
     grid-template-areas:
     "equals flour outf"
@@ -98,8 +91,37 @@ h3{
     "equals starter outst"
 }
 
-@media only screen and (max-width: 600px) {
-h2 {
-font-size: 1px;
+h2{
+    margin-right: 0px;
+    text-align: left;
+    font-family: "Arial";
+    min-width: 260px;
+    margin-top: 0px;
+    font-size:3vh;
 }
+
+p {
+    font-family: "Arial";
+    display:inline;
+    font-size:3vh;
+    margin-bottom:-1;
+    text-align:left;
 }
+@media only screen and (max-width: 767px) {
+    h2{
+        margin-right: 0px;
+        text-align: left;
+        font-family: "Arial";
+        min-width: 260px;
+        margin-top: 0px;
+        font-size:2vh;
+    }
+    p {
+        font-family: "Arial";
+        display:inline;
+        font-size:2vh;
+        margin-bottom:-1;
+        text-align:left;
+    }
+}
+
