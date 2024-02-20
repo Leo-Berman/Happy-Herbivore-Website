@@ -2,6 +2,7 @@
 <html>
     <link href='navbar.css' rel='stylesheet'>
     <link href='global.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script>
     function calc(){
         
@@ -59,36 +60,42 @@
     </style>
 </head> 
     <body>
-        <div class = "buttonscenter">
-            <a href="index.html"><button class="navbutton">Home</button></a>
-            <a href="SourdoughCalculator.html"><button class="navbutton">Sourdough Calculator</button></a> 
-            <a href="about.html"><button class="navbutton">About</button></a> 
-            <a href="contact.html"><button class="navbutton">Contact</button></a> 
-        </div>
+        <div class="navbar">
+            <div class="dropdown">
+              <button class="navbutton">
+                <i class="fa fa-bars"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="index.html"><button class="navbutton">Home</button></a>
+                <a href="SourdoughCalculator.html"><button class="navbutton">Sourdough Calculator</button></a> 
+                <a href="about.html"><button class="navbutton">About</button></a> 
+                <a href="contact.html"><button class="navbutton">Contact</button></a> 
+              </div>
+            </div>
+          </div>
+          
         <div style = "margin-left:0%;text-align:center;">
             <h2 style = "margin-top:0">Hydration [%]:</h2>
-            <input id = "Hydration" name = "Hydration" style = "max-width:100%;font-size:4vh;border-radius:10px;border-width: 10px;height:5vh;vertical-align:text-middle;display:inline-block; font-family:Arial;" type = "text"><br>
+            <input id = "Hydration" name = "Hydration" style = "width:100%;max-width:600px;font-size:4vh;border-radius:10px;border-width: 10px;height:5vh;vertical-align:text-middle;display:inline-block; font-family:Arial;" type = "text"><br>
             <br>
             <h2>Number of Servings:</h2>
-            <input id = "Servings" name = "Servings" style = "max-width:100%;font-size:4vh;border-radius:10px;border-width: 10px;height:5vh;vertical-align:text-middle;display:inline-block; font-family:Arial;" type = "text"><br>
+            <input id = "Servings" name = "Servings" style = "width:100%;max-width:600px;font-size:4vh;border-radius:10px;border-width: 10px;height:5vh;vertical-align:text-middle;display:inline-block; font-family:Arial;" type = "text"><br>
             <br>
             <h2>Amount of Starter [g]:</h2>
-            <input id = "Starter" name = "Starter" style = "max-width:100%;font-size:4vh;border-radius:10px;border-width: 10px;height:5vh;vertical-align:text-middle;display:inline-block; font-family:Arial;" type = "text"><br>
+            <input id = "Starter" name = "Starter" style = "width:100%;max-width:600px;font-size:4vh;border-radius:10px;border-width: 10px;height:5vh;vertical-align:text-middle;display:inline-block; font-family:Arial;" type = "text"><br>
             <br>
             <br>
             <button value = "Solve" onclick = "calc()" style = "height:80px; width:80px;border-radius:10px;border-width: 10px;background-color: white;"> <h3 style = "padding:0;margin:0;font-family:Arial;font-size:40pt;font-weight:bold;color:purple;">=</h3> </button>
         <br><br>
-        <div class = "center" style = "padding:0;margin:0;font-size:4vw;text-align:left;">
+        <div class = "calcenter" style = "line-height:2">
             <p> Flour [g]: </p>
-            <p id = "FlourNeeded">___<br></p> 
+            <p id = "FlourNeeded">___</p><br>
             <p> Water [g]: </p>
-            <p id = "WaterNeeded">___</p>
-            <br>
+            <p id = "WaterNeeded">___</p><br>
             <p> Salt [g]: </p>
-            <p id = "SaltNeeded">___</p>
-            <br>
+            <p id = "SaltNeeded">___</p><br>
             <p> Starter [g]: </p>
-            <p id = "StarterNeeded">___</p>
+            <p id = "StarterNeeded">___</p><br>
 
         </div>
         </div>

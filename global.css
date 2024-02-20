@@ -10,6 +10,13 @@ body {
     transform: translate(50%, -50%);
 }
 
+.calccenter{
+    position:absolute;
+    text-align:center;
+    top: 30%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
 .buttonscenter{
     width:420px;
     height:220px;
@@ -48,6 +55,7 @@ h2{
     font-family: "Arial";
     min-width: 260px;
     margin-top: 0px;
+    font-size:3vh;
 }
 
 h3{
