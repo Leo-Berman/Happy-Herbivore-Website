@@ -10,13 +10,6 @@ body {
     transform: translate(50%, -50%);
 }
 
-.calccenter{
-    position:absolute;
-    text-align:center;
-    top: 30%;
-    right: 50%;
-    transform: translate(50%, -50%);
-}
 .buttonscenter{
     width:420px;
     height:220px;
@@ -50,12 +43,11 @@ p {
     
 h2{
     margin-right: 0px;
-    display:inline-block;
     text-align: left;
     font-family: "Arial";
     min-width: 260px;
     margin-top: 0px;
-    font-size:3vh;
+    font-size:2vh;
 }
 
 h3{
@@ -64,4 +56,31 @@ h3{
     font-size:3vh;
     margin-bottom:-1;
     font-weight:normal;
+}
+
+.solvebutt{
+    height:80px;
+    width:80px;
+    border-radius:10px;
+    border-width: 10px;
+    background-color: white;
+}
+.solvebutt:hover{
+    height:80px;
+    width:80px;
+    border-radius:10px;
+    border-width: 10px;
+    background-color: grey;
+    transition:.3s;
+}
+
+.calcgrid{
+    display:grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows:100px 100px 100px 100px;
+    grid-template-areas: 
+        "describe inputtype"
+        "describe1 inputtype1"
+        "describe2 inputtype2"
+        "equals equals"
 }

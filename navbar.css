@@ -8,6 +8,7 @@
     border:solid;
     font-family:Arial;
     font-size:20pt;
+    transition: 0.3s;
 }
 .navbutton:hover{
     background-size:contain;
@@ -19,7 +20,7 @@
     border:solid;
     font-family:Arial;
     font-size:20pt;
-}
+}               
 
 /* Navbar container */
 .navbar {
@@ -42,6 +43,7 @@
   .dropdown {
     float: left;
     overflow: hidden;
+    transition: 3s;
   }
   
   /* Dropdown button */
@@ -57,22 +59,25 @@
   
   /* Dropdown content (hidden by default) */
   .dropdown-content {
-    display: none;
+    display: block;
     position: absolute;
     background-color: rgba(255, 255, 255, 0);
     min-width: 200px;
     z-index: 1;
+    transition:.3s;
+    opacity:0%;
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
     float: none;
     display: block;
+    transition: all .5s ease;
   }
-  
 
-  
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content{
     display: block;
+    opacity:100%;
   }
+

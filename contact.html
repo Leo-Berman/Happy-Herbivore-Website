@@ -1,54 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
-<style>
-    body {
-        background-color: pink;
-    }
-    h1 {
-        font-family: "Arial";
-        font-size: 80px;
-        text-align: center;
-        color:rgb(0, 0, 0);
-    }
-    h2{
-        font-family: "Arial";
-        font-size: 40px;
-        text-align: center;
-        color:rgb(0, 0, 0);
-    }
-    p {
-        font-family: "Arial";
-        font-size: 14;
-        margin-right: 40px;
-        display:inline;
-        text-align: center;
-    }
-    .center{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-    .image-row {
-        display: flex;
-        justify-content: space-between; /* this will add equal space between each image */
-    }
-
-</style>
+    <link href='navbar.css' rel='stylesheet'>
+    <link href='global.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
-    <a style = "font-weight:bold;font-size:4vh; display:block; text-align:center; font-family:Arial" href="index.html">Home</a>
-    <br>
-    <a style = "font-weight:bold;font-size: 4vh; display:block; text-align:center; font-family: Arial" href="SourdoughCalculator.html">Sourdough Calculator</a>
-    <br>
-    <a style = "font-weight:bold;font-size: 4vh; display:block; text-align:center; font-family: Arial" href="about.html">About Me</a>
-    <br> 
-    <a style = "font-weight:bold;font-size: 4vh; display:block; text-align:center; font-family: Arial" href="contact.html">Contact Me</a>
-    <! Order From me>
-    <h2 ><a href = "mailto:HappyHerbivoreBaking@gmail.com">HappyHerbivoreBaking@gmail.com</a><h2>
+    <div class="navbar">
+        <div class="dropdown">
+          <button class="navbutton">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="index.html"><button class="navbutton">Home</button></a>
+            <a href="SourdoughCalculator.html"><button class="navbutton">Sourdough Calculator</button></a> 
+            <a href="about.html"><button class="navbutton">About</button></a> 
+            <a href="contact.html"><button class="navbutton">Contact</button></a> 
+          </div>
+        </div>
+      </div>
 
-    <! Insta>
-    <a style = "display:block;" href="https://www.instagram.com/happyherbivorebaking"><img class = "center" style = "width: 30vw; height: 30vw;" src = instagram.png></img></a>
+      <div class ="divcenter">
+        <!-- <! Logo> -->
+        <img style = "margin-top:30vh;height:420px;width:420px;margin-bottom:30px;" class = "imagecenter" src="Media/logo2.png"></img>
+        
+    <!-- <! Order From me> -->
+    <h2><a href = "mailto:HappyHerbivoreBaking@gmail.com">HappyHerbivoreBaking@gmail.com</a><h2>
+
+    <!-- <! Insta> -->
+    <a href="https://www.instagram.com/happyherbivorebaking"><img class = "imagecenter" style = "width: 10vw; height: 10vw;" src = Media/instagram.png></img></a>
     
+</div>
 </body>

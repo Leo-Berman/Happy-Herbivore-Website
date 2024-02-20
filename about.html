@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html>
-<link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+    <link href='navbar.css' rel='stylesheet'>
+    <link href='global.css' rel='stylesheet'>
+    <link href='slideshow.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
-    <style>
-        body {
-            background-color: pink;
-        }
-        h1 {
-            font-family: "Arial";
-            font-size: 28px;
-            text-align: center;
-        }
-        p {
-            font-family: "Arial";
-            font-size: 28px;
-            display:inline;
-            padding-top: 20px;
-        }
-        h2{
-            margin-right: 0px;
-            display:inline-block;
-            text-align: left;
-            font-family: "Arial";
-            min-width: 260px;
-            margin-top: 0px;
-        }
-    </style>
+
 </head> 
 <body>
- 
-    <a style = "font-weight:bold;font-size: 30px; display:block; text-align:center; font-family: Arial" href="index.html">Home</a>
-    <br>
-    <a style = "font-weight:bold;font-size: 30px; display:block; text-align:center; font-family: Arial" href="SourdoughCalculator.html">Sourdough Calculator</a>
-    <br>
-    <a style = "font-weight:bold;font-size: 30px; display:block; text-align:center; font-family: Arial" href="contact.html">Contact Me</a>
-    <br>
-    <h1>Hi!</h1>
-    <br>
-    <div style = "margin-left:10%;margin-right:10%;max-width:80%;">
-    <p style = "max-width:10px;text-align:center;font-family:Arial;">I'm a vegan baker and computer engineer so I coded this whole website myself including the sourdough calculator. Check out <a href = "https://leo-berman.github.io/projects.html">my projects</a> for some of the other cool stuff I do.</p>
-    </div>
+    <div class="navbar">
+        <div class="dropdown">
+          <button class="navbutton">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="index.html"><button class="navbutton">Home</button></a>
+            <a href="SourdoughCalculator.html"><button class="navbutton">Sourdough Calculator</button></a> 
+            <a href="about.html"><button class="navbutton">About</button></a> 
+            <a href="contact.html"><button class="navbutton">Contact</button></a> 
+          </div>
+        </div>
+      </div>
+
+      <div class="divcenter" style = "margin-top:20vh;border-radius:100%;">
+            <figure>
+          <img id="mainPhoto" style = "border-radius:20px;width:400px;height:400px;">
+          <h1><figCaption id = "mainLabel"></figCaption></h1>   
+        </figure>
+      </div>
+
+    <script>
+        
+        
+        let images = [ 'Media/dawghaver.jpeg', 'Media/moosician.jpeg','Media/roxtoucher.jpeg', 'Media/Engimineer.jpg'];
+        let labels = ["Dog Haver", "Guitar Player", "Rock Climber", "Engineer"];
+        let index = 0;
+        const imgElement = document.querySelector('#mainPhoto');
+        const imgCaption = document.querySelector('#mainLabel');
+        function change() {
+           imgElement.src = images[index];
+           imgCaption.innerHTML = labels[index];
+           index > 1 ? index = 0 : index++;
+           
+        }
+        
+        window.onload = function () {
+            setInterval(change, 3000);
+        };
+    </script>
+
 </body>
