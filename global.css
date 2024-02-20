@@ -13,19 +13,47 @@ body {
 .buttonscenter{
     width:420px;
     height:220px;
-    position:absolute;
+    position:relative;
     text-align:center;
-    top: 150%;
-    right: 50%;
-    transform: translate(50%, -50%);
     display: grid;
     grid-template-columns: 200px 200px;
     grid-gap:10px;
+    margin:auto;
 }
 
 .imagecenter{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100px;
-    }
+    width: 400px;
+}
+
+h1 {
+    font-family: "Arial";
+    font-size: 28px;
+    text-align: center;
+}
+    
+p {
+    font-family: "Arial";
+    display:inline;
+    font-size:3vh;
+    margin-bottom:-1;
+}
+    
+h2{
+    margin-right: 0px;
+    display:inline-block;
+    text-align: left;
+    font-family: "Arial";
+    min-width: 260px;
+    margin-top: 0px;
+}
+
+h3{
+    font-family: "Arial";
+    display:inline;
+    font-size:3vh;
+    margin-bottom:-1;
+    font-weight:normal;
+}

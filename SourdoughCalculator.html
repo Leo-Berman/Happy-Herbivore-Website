@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+    <link href='navbar.css' rel='stylesheet'>
+    <link href='global.css' rel='stylesheet'>
 <script>
     function calc(){
         
@@ -53,50 +54,17 @@
         body {
             background-color: pink;
         }
-        h1 {
-            font-family: "Arial";
-            font-size: 28px;
-            text-align: center;
-        }
-        p {
-            font-family: "Arial";
-            display:inline;
-            font-size:3vh;
-            margin-bottom:-1;
-        }
-        h2{
-            margin-right: 0px;
-            display:inline-block;
-            text-align: left;
-            font-family: "Arial";
-            min-width: 260px;
-            margin-top: 0px;
-        }
-        h3{
-            font-family: "Arial";
-            display:inline;
-            font-size:3vh;
-            margin-bottom:-1;
-            font-weight:normal;
-        }
-        .center {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-    }
+
         
     </style>
 </head> 
     <body>
-        <br>
-        <a style = "font-weight:bold;font-size: 3vh; display:block; text-align:center; font-family: Arial" href="index.html">Home</a>
-        <br>
-        <a style = "font-weight:bold;font-size: 3vh; display:block; text-align:center; font-family: Arial" href="SourdoughCalculator.html">Sourdough Calculator</a>
-        <br>
-        <a style = "font-weight:bold;font-size: 3vh; display:block; text-align:center; font-family: Arial" href="about.html">About Me</a>
-        <br>
-        <a style = "font-weight:bold;font-size: 3vh; display:block; text-align:center; font-family: Arial" href="contact.html">Contact Me</a>
-        <br>
+        <div class = "buttonscenter">
+            <a href="index.html"><button class="navbutton">Home</button></a>
+            <a href="SourdoughCalculator.html"><button class="navbutton">Sourdough Calculator</button></a> 
+            <a href="about.html"><button class="navbutton">About</button></a> 
+            <a href="contact.html"><button class="navbutton">Contact</button></a> 
+        </div>
         <div style = "margin-left:0%;text-align:center;">
             <h2 style = "margin-top:0">Hydration [%]:</h2>
             <input id = "Hydration" name = "Hydration" style = "max-width:100%;font-size:4vh;border-radius:10px;border-width: 10px;height:5vh;vertical-align:text-middle;display:inline-block; font-family:Arial;" type = "text"><br>
