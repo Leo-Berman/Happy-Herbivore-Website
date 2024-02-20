@@ -39,6 +39,7 @@ p {
     display:inline;
     font-size:3vh;
     margin-bottom:-1;
+    text-align:left;
 }
     
 
@@ -83,18 +84,18 @@ h3{
         "describe inputtype"
         "describe1 inputtype1"
         "describe2 inputtype2"
-        "equals outcome"
+        "outcome outcome"
 }
 
 .outcomegrid{
     display:grid;
-    grid-template-columns: 140px 30px;
+    grid-template-columns: 300px 140px 30px;
     grid-template-rows: 40px 40px 40px 40px;
     grid-template-areas:
-    "flour outf"
-    "water outw"
-    "salt outsa"
-    "starter outst"
+    "equals flour outf"
+    "equals water outw"
+    "equals salt outsa"
+    "equals starter outst"
 }
 
 @media only screen and (max-width: 600px) {
