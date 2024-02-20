@@ -1,61 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
-<style>
-    body {
-        background-color: pink;
-    }
-    h1 {
-        font-family: "Arial";
-        font-size: 80px;
-        text-align: center;
-        color:rgb(0, 0, 0);
-    }
-    h2{
-        font-family: "Arial";
-        font-size: 40px;
-        text-align: center;
-        color:rgb(0, 0, 0);
-    }
-    p {
-        font-family: "Arial";
-        font-size: 14;
-        margin-right: 40px;
-        display:inline;
-        text-align: center;
-    }
-    .center{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-    .image-row {
-        display: flex;
-        justify-content: space-between; /* this will add equal space between each image */
-    }
-
-</style>
+<link href='navbar.css' rel='stylesheet'>
+<link href='global.css' rel='stylesheet'>
 <body>
-    <! Logo>
-    <img style = " height:350px;width:500px;" class="center" src="logo2.png"></img>
-    <br>
-    <! Reference To Calculator>
-    <br>
-    <a style = "font-weight:bold;font-size: 4vh; display:block; text-align:center; font-family: Arial" href="index.html">Home</a>
-    <br>
-    <br>
-    <br>    
-    <a style = "font-weight:bold;font-size: 4vh; display:block; text-align:center; font-family: Arial" href="SourdoughCalculator.html">Sourdough Calculator</a>
-    <br>
-    <br>
-    <br>
-    <a style = "font-weight:bold;font-size: 4vh; display:block; text-align:center; font-family: Arial" href="about.html">About Me</a>
-    <br> 
-    <br>
-    <br>
-    <a style = "font-weight:bold;font-size: 4vh; display:block; text-align:center; font-family: Arial" href="contact.html">Contact Me</a>
-    <br> 
-    <br>
+    <div class ="divcenter">
+        <! Logo>
+        <img style = "height:50%;width:50%" class = "imagecenter" src="Media/logo2.png"></img><br>
+        
+        <! Reference To Calculator>
+        <div class = "buttonscenter">
+            <a href="index.html"><button class="navbutton">Home</button></a>
+            <a href="SourdoughCalculator.html"><button class="navbutton">Sourdough Calculator</button></a> 
+            <a href="about.html"><button class="navbutton">About</button></a> 
+            <a href="contact.html"><button class="navbutton">Contact</button></a> 
+        </div>
+    </div>
 </body>

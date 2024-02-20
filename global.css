@@ -1,0 +1,31 @@
+body {
+    background-color: pink;
+}
+
+.divcenter{
+    position:absolute;
+    text-align:center;
+    top: 30%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.buttonscenter{
+    width:420px;
+    height:220px;
+    position:absolute;
+    text-align:center;
+    top: 150%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-gap:10px;
+}
+
+.imagecenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    }

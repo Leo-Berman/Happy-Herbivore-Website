@@ -1,0 +1,22 @@
+.navbutton{
+    background-size:contain;
+    background-repeat:no-repeat;
+    width:200px;
+    height:100px;
+    border-radius:20px;
+    background-color:white                                  ;
+    border:solid;
+    font-family:Arial;
+    font-size:20pt;
+}
+.navbutton:hover{
+    background-size:contain;
+    background-repeat:no-repeat;
+    width:200px;
+    height:100px;
+    border-radius:20px;
+    background-color:grey;
+    border:solid;
+    font-family:Arial;
+    font-size:20pt;
+}
