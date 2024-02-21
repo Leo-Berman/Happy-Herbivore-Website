@@ -5,14 +5,14 @@
     border-radius:10px;
     border-width: 1vw;
     height:3vh;
-    font-family:Arial;
+    font-family:'Courier New', monospace;
     margin:auto;
 }
 
 .headerdivs{
     display:block;
     font-size:4vh;
-    font-family:Arial;
+    font-family:'Courier New', monospace;
     text-align:center;
     margin:auto;
 }
@@ -76,7 +76,7 @@
 }
 
 .p1 {
-    font-family: "Arial";
+    font-family: 'Courier New', monospace;
     display:inline;
     font-size:4vh;
     text-align:right;
@@ -84,7 +84,7 @@
 }
 
 .p2 {
-    font-family: "Arial";
+    font-family: 'Courier New', monospace;
     display:inline;
     font-size:4vh;
     text-align:left;
@@ -99,14 +99,14 @@
         border-radius:10px;
         border-width: 1vw;
         height:3vh;
-        font-family:Arial;
+        font-family:'Courier New', monospace;
         margin:auto;
     }
 
     .headerdivs{
         display:block;
         font-size:2.5vh;
-        font-family:Arial;
+        font-family:'Courier New', monospace;
         text-align:center;
         margin:auto;
     }
@@ -167,16 +167,16 @@
     }
     
     .p1 {
-        font-family: "Arial";
+        font-family: 'Courier New', monospace;
         display:inline;
-        font-size:2.5vh;
+        font-size:2.2vh;
         margin-bottom:-1;
-        text-align:left;
+        text-align:right;
     }
     .p2 {
-        font-family: "Arial";
+        font-family: 'Courier New', monospace;
         display:inline;
-        font-size:2.5vh;
+        font-size:2.2vh;
         margin-bottom:-1;
         text-align:left;
     }

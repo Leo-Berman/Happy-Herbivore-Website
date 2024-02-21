@@ -11,13 +11,13 @@ body {
 }
 
 h1 {
-    font-family: "Arial";
+    font-family: "'Courier New', monospace";
     font-size: 28px;
     text-align: center;
 }
     
 p {
-    font-family: "Arial";
+    font-family: "'Courier New', monospace";
     display:inline;
     font-size:3vh;
     margin-bottom:-1;
@@ -28,7 +28,7 @@ p {
 
 
 h3{
-    font-family: "Arial";
+    font-family: "'Courier New', monospace";
     display:inline;
     font-size:3vh;
     margin-bottom:-1;

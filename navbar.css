@@ -6,7 +6,7 @@
     border-radius:20px;
     background-color:white                                  ;
     border:solid;
-    font-family:Arial;
+    font-family:'Courier New', monospace;
     font-size:20pt;
 }
 .navbutton:hover{
@@ -17,7 +17,7 @@
     border-radius:20px;
     background-color:grey;
     border:solid;
-    font-family:Arial;
+    font-family:'Courier New', monospace;
     font-size:20pt;
 }           
 
@@ -25,7 +25,7 @@
 .navbar {
     overflow: hidden;
     background-color: transparent;
-    font-family: Arial;
+    font-family: 'Courier New', monospace;
   }
   
   /* Links inside the navbar */
@@ -86,7 +86,7 @@
       border-radius:20px;
       background-color:white                                  ;
       border:solid;
-      font-family:Arial;
+      font-family:'Courier New', monospace;
       font-size:12pt;
   }
   .navbutton:hover{
@@ -97,7 +97,7 @@
       border-radius:20px;
       background-color:grey;
       border:solid;
-      font-family:Arial;
+      font-family:'Courier New', monospace;
       font-size:12pt;
   }           
   
@@ -105,7 +105,7 @@
   .navbar {
       overflow: hidden;
       background-color: transparent;
-      font-family: Arial;
+      font-family: 'Courier New', monospace;
     }
     
     /* Links inside the navbar */

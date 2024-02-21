@@ -16,7 +16,7 @@
     border-radius:20px;
     background-color:white                                  ;
     border:solid;
-    font-family:Arial;
+    font-family:'Courier New', monospace;
     font-size:30pt;
 }
 .homenavbutton:hover{
@@ -27,7 +27,7 @@
     border-radius:20px;
     background-color:grey;
     border:solid;
-    font-family:Arial;
+    font-family:'Courier New', monospace;
     font-size:30pt;
 }     
 
@@ -67,7 +67,7 @@
           border-radius:20px;
           background-color:white;
           border:solid;
-          font-family:Arial;
+          font-family:'Courier New', monospace;
           font-size:6vw;
     }
 
@@ -79,7 +79,7 @@
           border-radius:20px;
           background-color:grey;
           border:solid;
-          font-family:Arial;
+          font-family:'Courier New', monospace;
           font-size:6vw;
     }           
 }
