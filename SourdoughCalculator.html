@@ -2,58 +2,22 @@
 <html>
     <link href='navbar.css' rel='stylesheet'>
     <link href='global.css' rel='stylesheet'>
+    <link href='sdcalc.css' rel='stylesheet'>
+
+    <!-- Hamburger menu bars -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script>
-    function calc(){
-        
-        var HD = document.getElementById("Hydration").value;
-        var NS = document.getElementById("Servings").value;
-        var SR = document.getElementById("Starter").value;
-        if(HD == NaN | NS == NaN | SR == NaN){
-            document.getElementById("FlourNeeded").innerHTML = "0";
-            document.getElementById("WaterNeeded").innerHTML = "0";
-            document.getElementById("SaltNeeded").innerHTML = "0";
-            document.getElementById("ServingsNeeded").innerHTML = "0";
-            document.getElementById("StarterNeeded").innerHTML = "0";
-            document.getElementById("SourNeeded").innerHTML = "It seems there was an error calculating your recipe, try to enter a number between 55 and 120 for Hydration [%] and numbers greater than 0 for Number of Servings and Amount of Starter [g]";
-            return;
 
-        }
-        var starter = parseFloat(SR);
-        var TotalFlour = parseFloat(NS)*65;
-        if (starter > (TotalFlour/5)){
-            var starter = TotalFlour/5;
-            console.log(start)
-        }
-        var Flour = TotalFlour-(starter/2);
-        var Water = parseInt(HD)/100*TotalFlour-(starter/2);
-        var Salt = Flour*.02;
-        var Sourness = starter/Flour;
-        
-        document.getElementById("FlourNeeded").innerHTML = Flour.toFixed(0);
-        document.getElementById("WaterNeeded").innerHTML = Water.toFixed(0);
-        document.getElementById("SaltNeeded").innerHTML = Salt.toFixed(1);
-        //document.getElementById("ServingsNeeded").innerHTML = parseFloat(NS).toFixed(0);
-        document.getElementById("StarterNeeded").innerHTML = starter.toFixed(0);
-        if(Sourness < .05){
-            var sour = "This is a very sour loaf, if you want a more mellow loaf,<br> consider increasing the amount of starter";
-        }
-        else if (Sourness < .1){
-            var sour = "This is a sour loaf, if you want a more mellow loaf,<br> consider increasing the amount of starter, if you would like a more sour loaf, consider decreasing the amount of starter you use";
-        }
-        else if (Sourness < .15){
-            var sour = "This is a medium sourness loaf, if you want a more mellow loaf,<br> consider increasing the amount of starter, if you would like a more sour loaf, consider decreasing the amount of starter you use";
-        }
-        else{
-            var sour = "This is a mellow loaf, if you'd like a more sour loaf,<br> consider decreasing the amount of starter";
-        }
 
-        document.getElementById("SourNeeded").innerHTML = sour;
-    }
-</script> 
+
     <body>
+
+        <!-- Calculations -->
+<script src="./js/calculations.js"></script>
+
+        <!-- get mobile data -->
         <meta content="width=device-width, initial-scale=1" name="viewport" />
 
+        <!-- Navbar -->
         <div class="navbar">
             <div class="dropdown">
               <button class="navbutton">
@@ -62,34 +26,35 @@
               <div class="dropdown-content">
                 <a href="index.html"><button class="navbutton">Home</button></a>
                 <a href="SourdoughCalculator.html"><button class="navbutton">Sourdough Calculator</button></a> 
-                <!-- <a href="about.html"><button class="navbutton">About</button></a>  -->
                 <a href="contact.html"><button class="navbutton">Contact</button></a> 
               </div>
             </div>
           </div>
-          <div class = "divcenter" style = "margin-top:100px;">
-        <div class = "calcgrid">
-            <h2 style = "text-align:left;margin-top:0;grid-area:describe">Hydration [%]:</h2>
-            <input id = "Hydration" name = "Hydration" style = "grid-area:inputtype;width:100%;max-width:600px;font-size:4vh;border-radius:10px;border-width: 10px;height:3vh;vertical-align:text-middle;display:inline-block; font-family:Arial;" type = "text">
+
+
+        <div class = "divcentersd" style = "margin-top:100px;">
+            <div class = "calcgrid">
+            <div class = "headerdivs" style = "grid-area:describe;">Hydration [%]:</div>
+           <input class = "inbars" id = "Hydration" name = "Hydration" type = "text">
             
-            <h2 style = "text-align:left;margin-top:0;grid-area:describe1">Servings:</h2>
-            <input id = "Servings" name = "Servings" style = "grid-area:inputtype1;width:100%;max-width:600px;font-size:4vh;border-radius:10px;border-width: 10px;height:3vh;vertical-align:text-middle;display:inline-block; font-family:Arial;" type = "text">
+            <div class = "headerdivs"  style = "grid-area:describe1">Servings:</div>
+            <input class = "inbars" id = "Servings" name = "Servings" style = "grid-area:inputtype1;" type = "text">
             
-            <h2 style = "text-align:left;margin-top:0;grid-area:describe2">Starter [g]:</h2>
-            <input id = "Starter" name = "Starter" style = "grid-area:inputtype2;width:100%;max-width:600px;font-size:4vh;border-radius:10px;border-width: 10px;height:3vh;vertical-align:text-middle;display:inline-block; font-family:Arial;" type = "text">
+            <div class = "headerdivs" style = "grid-area:describe2">Starter [g]:</div>
+            <input class = "inbars" id = "Starter" name = "Starter" style = "grid-area:inputtype2;" type = "text">
         
             
             <div class = "divcenter" style = "margin-top:200px;">
         <div class="outcomegrid" style = "grid-area:outcome;">
-            <button class = "solvebutt" style = "align-self:center;justify-self:center;grid-area:equals" value = "Solve" onclick = "calc()"> <h3 style = "padding:0;margin:0;font-family:Arial;font-size:40pt;font-weight:bold;color:purple;">=</h3> </button>
-            <p style = "grid-area:flour"> Flour [g]: </p>
-            <p style = "grid-area:outf" id = "FlourNeeded">___</p><br>
-            <p style = "grid-area:water"> Water [g]: </p>
-            <p style = "grid-area:outw" id = "WaterNeeded">___</p><br>
-            <p style = "grid-area:salt"> Salt [g]: </p>
-            <p style = "grid-area:outsa" id = "SaltNeeded">___</p><br>
-            <p style = "grid-area:starter"> Starter [g]: </p>
-            <p style = "grid-area:outst" id = "StarterNeeded">___</p><br>
+            <button class = "solvebutt"  style = "grid-area:equals" value = "Solve" onclick = "calc()"> <h3 style = "padding:0;margin:0;font-family:Arial;font-size:40pt;font-weight:bold;color:purple;">=</h3> </button>
+            <p class="p1" style = "grid-area:flour"> <br>Flour:</p>
+            <p class="p2" style = "grid-area:outf" id = "FlourNeeded"><br>___</p><br>
+            <p class="p1" style = "grid-area:water"> <br>Water:</p>
+            <p class="p2" style = "grid-area:outw" id = "WaterNeeded"><br>___</p><br>
+            <p class="p1" style = "grid-area:salt"> <br>Salt:   </p>
+            <p class="p2" style = "grid-area:outsa" id = "SaltNeeded"><br>___</p><br>
+            <p class="p1" style = "grid-area:starter"> <br>Starter:</p>
+            <p class="p2" style = "grid-area:outst" id = "StarterNeeded"><br>___</p><br>
             </div>
         </div>
         </div>

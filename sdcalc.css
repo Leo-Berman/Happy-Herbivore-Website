@@ -1,0 +1,183 @@
+.inbars{
+    display:block;
+    max-width:27vw;
+    font-size:2.5vh;
+    border-radius:10px;
+    border-width: 1vw;
+    height:3vh;
+    font-family:Arial;
+    margin:auto;
+}
+
+.headerdivs{
+    display:block;
+    font-size:4vh;
+    font-family:Arial;
+    text-align:center;
+    margin:auto;
+}
+.inbars:focus{
+    border-color:rgb(165, 38, 197);
+    border-radius:10px;
+    border-width: 1vw;
+}
+
+.divcentersd{
+    position:absolute;
+    text-align:center;
+    top: 40%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.solvebutt{
+    display:block;
+    margin:auto;
+    height:80px;
+    width:80px;
+    border-radius:10px;
+    border-width: 10px;
+    background-color: white;
+    margin-top:90px;
+}
+.solvebutt:hover{
+    height:80px;
+    width:80px;
+    border-radius:10px;
+    border-width: 10px;
+    background-color: grey;
+    transition:.3s;
+}
+
+.calcgrid{
+    padding:5vw;
+    border-radius:10px;
+    background-color:rgb(201, 194, 194);
+    border:solid;
+    display:grid;
+    grid-template-columns: 20vw 40vw;
+    grid-template-rows:10vh 10vh 10vh 20vh;
+    grid-template-areas: 
+        "describe inputtype"
+        "describe1 inputtype1"
+        "describe2 inputtype2"
+        "outcome outcome"
+}
+
+.outcomegrid{
+    display:grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-template-areas:
+    "equals flour outf"
+    "equals water outw"
+    "equals salt outsa"
+    "equals starter outst"
+}
+
+.p1 {
+    font-family: "Arial";
+    display:inline;
+    font-size:4vh;
+    text-align:right;
+    margin-right:2vw;
+}
+
+.p2 {
+    font-family: "Arial";
+    display:inline;
+    font-size:4vh;
+    text-align:left;
+    margin-left:2vw;
+}
+@media only screen and (max-width: 767px) {
+
+    .inbars{
+        display:block;
+        max-width:27vw;
+        font-size:2.5vh;
+        border-radius:10px;
+        border-width: 1vw;
+        height:3vh;
+        font-family:Arial;
+        margin:auto;
+    }
+
+    .headerdivs{
+        display:block;
+        font-size:2.5vh;
+        font-family:Arial;
+        text-align:center;
+        margin:auto;
+    }
+    .inbars:focus{
+        border-color:rgb(165, 38, 197);
+        border-radius:10px;
+        border-width: 1vw;
+    }
+
+    .divcentersd{
+        position:absolute;
+        text-align:center;
+        top: 30%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    .solvebutt{
+        height:80px;
+        width:80px;
+        border-radius:10px;
+        border-width: 10px;
+        background-color: white;
+        margin-top:10vh;
+    }
+    .solvebutt:hover{
+        height:80px;
+        width:80px;
+        border-radius:10px;
+        border-width: 10px;
+        background-color: grey;
+        transition:.3s;
+    }
+    
+    .calcgrid{
+        /* border:solid; */
+        display:grid;
+        padding-top:5vh;
+        padding-bottom:10vh;
+        grid-template-columns: 40vw 30vw;
+        grid-template-rows:10vh 10vh 10vh 20vh;
+        grid-template-areas: 
+            "describe inputtype"
+            "describe1 inputtype1"
+            "describe2 inputtype2"
+            "outcome outcome"
+    }
+    
+    .outcomegrid{
+        display:grid;
+        grid-template-columns: 40vw 20vw 10vw;
+        grid-template-rows: 40px 40px 40px 40px;
+        grid-template-areas:
+        "equals flour outf"
+        "equals water outw"
+        "equals salt outsa"
+        "equals starter outst"
+    }
+    
+    .p1 {
+        font-family: "Arial";
+        display:inline;
+        font-size:2.5vh;
+        margin-bottom:-1;
+        text-align:left;
+    }
+    .p2 {
+        font-family: "Arial";
+        display:inline;
+        font-size:2.5vh;
+        margin-bottom:-1;
+        text-align:left;
+    }
+}
