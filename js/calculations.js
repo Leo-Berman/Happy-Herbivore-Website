@@ -23,11 +23,11 @@ function calc(){
     var Salt = Flour*.02;
     var Sourness = starter/Flour;
     
-    document.getElementById("FlourNeeded").innerHTML = Flour.toFixed(0)+"g";
-    document.getElementById("WaterNeeded").innerHTML = Water.toFixed(0)+"g";
-    document.getElementById("SaltNeeded").innerHTML = Salt.toFixed(1)+"g";
+    document.getElementById("FlourNeeded").innerHTML = "<br>" + Flour.toFixed(0)+"g";
+    document.getElementById("WaterNeeded").innerHTML = "<br>" + Water.toFixed(0)+"g";
+    document.getElementById("SaltNeeded").innerHTML = "<br>" + Salt.toFixed(1)+"g";
     //document.getElementById("ServingsNeeded").innerHTML = parseFloat(NS).toFixed(0);
-    document.getElementById("StarterNeeded").innerHTML = starter.toFixed(0)+"g";
+    document.getElementById("StarterNeeded").innerHTML = "<br>" + starter.toFixed(0)+"g";
     if(Sourness < .05){
         var sour = "This is a very sour loaf, if you want a more mellow loaf,<br> consider increasing the amount of starter";
     }
