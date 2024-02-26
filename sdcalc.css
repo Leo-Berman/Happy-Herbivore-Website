@@ -73,12 +73,13 @@
     "equals water outw"
     "equals salt outsa"
     "equals starter outst"
+    
 }
 
 .p1 {
     font-family: 'Courier New', monospace;
     display:inline;
-    font-size:4vh;
+    font-size:2vw;
     text-align:right;
     margin-right:2vw;
 }
@@ -86,7 +87,7 @@
 .p2 {
     font-family: 'Courier New', monospace;
     display:inline;
-    font-size:4vh;
+    font-size:2vw;
     text-align:left;
     margin-left:2vw;
 }
@@ -130,7 +131,7 @@
         border-radius:10px;
         border-width: 10px;
         background-color: white;
-        margin-top:10vh;
+        margin-top:5vh;
     }
     .solvebutt:hover{
         height:80px;
@@ -157,7 +158,8 @@
     
     .outcomegrid{
         display:grid;
-        grid-template-columns: 40vw 20vw 10vw;
+        padding-top:6vh;
+        grid-template-columns: 40vw 15vw 15vw;
         grid-template-rows: 40px 40px 40px 40px;
         grid-template-areas:
         "equals flour outf"
@@ -169,15 +171,136 @@
     .p1 {
         font-family: 'Courier New', monospace;
         display:inline;
-        font-size:2.2vh;
+        font-size:3vw;
         margin-bottom:-1;
-        text-align:right;
+        text-align:left;
     }
     .p2 {
         font-family: 'Courier New', monospace;
         display:inline;
-        font-size:2.2vh;
+        font-size:3vw;
         margin-bottom:-1;
         text-align:left;
     }
 }
+
+@media only screen and (min-width: 700px) and (max-width: 1100px) and (min-height:1000px) and (max-height:1500px) {
+    .headerdivs{
+        display:block;
+        font-size:4vw;
+        font-family:'Courier New', monospace;
+        text-align:center;
+        margin:auto;
+    }
+    .outcomegrid{
+        display:grid;
+        grid-template-columns: 20vw 20vw 20vw;
+        grid-template-rows: 40px 40px 40px 40px;
+        margin-top:15vh;
+        grid-template-areas:
+        "equals flour outf"
+        "equals water outw"
+        "equals salt outsa"
+        "equals starter outst"
+        
+    }
+    
+}   
+
+@media only screen and (min-width: 900px) and (max-width: 1100px) and (min-height:500px) and (max-height:700px) {
+    .inbars{
+        display:block;
+        max-width:27vw;
+        font-size:2.5vh;
+        border-radius:10px;
+        border-width: 1vw;
+        height:3vh;
+        font-family:'Courier New', monospace;
+        margin:auto;
+    }
+    
+    .headerdivs{
+        display:block;
+        font-size:4vh;
+        font-family:'Courier New', monospace;
+        text-align:center;
+        margin:auto;
+    }
+    .inbars:focus{
+        border-color:rgb(165, 38, 197);
+        border-radius:10px;
+        border-width: 1vw;
+    }
+    
+    .divcentersd{
+        position:absolute;
+        text-align:center;
+        top: 40%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+    
+    .solvebutt{
+        display:block;
+        margin:auto;
+        height:80px;
+        width:80px;
+        border-radius:10px;
+        border-width: 10px;
+        background-color: white;
+        margin-top:90px;
+    }
+    .solvebutt:hover{
+        height:80px;
+        width:80px;
+        border-radius:10px;
+        border-width: 10px;
+        background-color: grey;
+        transition:.3s;
+    }
+    
+    .calcgrid{
+        padding:5vw;
+        border-radius:10px;
+        background-color:rgb(201, 194, 194);
+        border:solid;
+        display:grid;
+        grid-template-columns: 20vw 40vw;
+        grid-template-rows:10vh 10vh 10vh 20vh;
+        grid-template-areas: 
+            "describe inputtype"
+            "describe1 inputtype1"
+            "describe2 inputtype2"
+            "outcome outcome"
+    }
+    
+    .outcomegrid{
+        display:grid;
+        grid-template-columns: 20vw 20vw 20vw;
+        grid-template-rows: 40px 40px 40px 40px;
+        margin-top:-10vh;
+        grid-template-areas:
+        "equals flour outf"
+        "equals water outw"
+        "equals salt outsa"
+        "equals starter outst"
+        
+    }
+    
+    .p1 {
+        font-family: 'Courier New', monospace;
+        display:inline;
+        font-size:2vw;
+        text-align:right;
+        margin-right:2vw;
+    }
+    
+    .p2 {
+        font-family: 'Courier New', monospace;
+        display:inline;
+        font-size:2vw;
+        text-align:left;
+        margin-left:2vw;
+    }
+    
+}   

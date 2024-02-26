@@ -81,7 +81,7 @@
     .navbutton{
       background-size:contain;
       background-repeat:no-repeat;
-      width:100px;
+      width:30vw;
       height:50px;
       border-radius:20px;
       background-color:white                                  ;
@@ -92,7 +92,7 @@
   .navbutton:hover{
       background-size:contain;
       background-repeat:no-repeat;
-      width:100px;
+      width:30vw;
       height:50px;
       border-radius:20px;
       background-color:grey;
