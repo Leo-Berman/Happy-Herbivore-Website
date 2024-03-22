@@ -20,7 +20,7 @@ function calc(){
     }
     var Flour = TotalFlour-(starter/2);
     var Water = parseInt(HD)/100*TotalFlour-(starter/2);
-    var Salt = Flour*.02;
+    var Salt = TotalFlour*.02;
     var Sourness = starter/Flour;
     
     document.getElementById("FlourNeeded").innerHTML = "<br>" + Flour.toFixed(0)+"g";
