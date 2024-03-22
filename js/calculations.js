@@ -14,7 +14,7 @@ function calc(){
 
     }
     var starter = parseFloat(SR);
-    var TotalFlour = parseFloat(NS)*65;
+    var TotalFlour = parseFloat(NS)*500;
     if (starter > (TotalFlour/5)){
         var starter = TotalFlour/5;
     }
